@@ -9,5 +9,5 @@ sed -i 's/\r$//' config.sub
 sed -i 's/\r$//' version.sh
 sed -i 's/\r$//' tools/cltostr.sh
 CC=arm-hisiv200-linux-gcc ./configure --enable-static --disable-asm --cross-prefix=arm-hisiv200-linux- --host=arm-hisiv200-linux-gnueabi --prefix=./install/linux/hisiv200-static
-make
+make -j8
 make install

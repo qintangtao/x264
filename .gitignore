@@ -48,3 +48,15 @@ dataDec.txt
 log.dec
 common/oclobj.h
 x264_lookahead.clbin
+/install/linux/hisiv200/lib
+/install/linux/hisiv200/bin
+/install/linux/hisiv200/include
+/install/linux/hisiv200_static/lib
+/install/linux/hisiv200_static/bin
+/install/linux/hisiv200_static/include
+/install/windows/x86_x64_msvc/bin
+/install/windows/x86_x64_msvc/include
+/install/windows/x86_x64_msvc/lib
+/install/windows/x86_x64_msvc_static/bin
+/install/windows/x86_x64_msvc_static/include
+/install/windows/x86_x64_msvc_static/lib
