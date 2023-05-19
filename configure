@@ -584,6 +584,16 @@ host="${host#*-}"
 host_vendor="${host%%-*}"
 host_os="${host#*-}"
 
+log_msg "CC=$CC"
+log_msg "STRIP=$STRIP"
+log_msg "STRINGS=$STRINGS"
+log_msg "INSTALL=$INSTALL"
+log_msg "PKGCONFIG=$PKGCONFIG"
+log_msg "host=$host"
+log_msg "host_cpu=$host_cpu"
+log_msg "host_vendor=$host_vendor"
+log_msg "host_os=$host_os"
+
 trap 'rm -rf conftest*' EXIT
 
 # test for use of compilers that require specific handling
@@ -1037,7 +1047,7 @@ ASFLAGS="$ASFLAGS -DSTACK_ALIGNMENT=$stack_alignment"
 CPU_ENDIAN="little-endian"
 if [ $compiler = GNU ]; then
     echo "int i[2] = {0x42494745,0}; double f[2] = {0x1.0656e6469616ep+102,0};" > conftest.c
-    $CC $CFLAGS -fno-lto conftest.c -c -o conftest.o 2>/dev/null || die "endian test failed"
+    $CC $CFLAGS -fno-lto conftest.c -c -o conftest.o 2>/dev/null || $CC $CFLAGS conftest.c -c -o conftest.o 2>/dev/null || die "endian test failed"
     if (${STRINGS} -a conftest.o | grep -q BIGE) && (${STRINGS} -a conftest.o | grep -q FPendian) ; then
         define WORDS_BIGENDIAN
         CPU_ENDIAN="big-endian"
