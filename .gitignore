@@ -72,3 +72,15 @@ x264_lookahead.clbin
 /install/windows/x86_msvc_static/include
 /install/windows/x86_msvc_static/lib
 /install/windows/x86_msvc_static/bin
+/install/windows/x86_x64_mingw/bin
+/install/windows/x86_x64_mingw/include
+/install/windows/x86_x64_mingw/lib
+/install/windows/x86_x64_mingw_static/bin
+/install/windows/x86_x64_mingw_static/include
+/install/windows/x86_x64_mingw_static/lib
+/install/windows/x86_mingw/include
+/install/windows/x86_mingw/lib
+/install/windows/x86_mingw/bin
+/install/windows/x86_mingw_static/bin
+/install/windows/x86_mingw_static/include
+/install/windows/x86_mingw_static/lib
