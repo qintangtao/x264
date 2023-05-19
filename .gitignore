@@ -60,3 +60,15 @@ x264_lookahead.clbin
 /install/windows/x86_x64_msvc_static/bin
 /install/windows/x86_x64_msvc_static/include
 /install/windows/x86_x64_msvc_static/lib
+/install/linux/x86/bin
+/install/linux/x86/include
+/install/linux/x86/lib
+/install/linux/x86_static/include
+/install/linux/x86_static/lib
+/install/linux/x86_static/bin
+/install/windows/x86_msvc/bin
+/install/windows/x86_msvc/include
+/install/windows/x86_msvc/lib
+/install/windows/x86_msvc_static/include
+/install/windows/x86_msvc_static/lib
+/install/windows/x86_msvc_static/bin
