@@ -102,3 +102,9 @@ x264_lookahead.clbin
 /install/android/arm64-v8a-static/include
 /install/android/arm64-v8a-static/lib
 /install/android/arm64-v8a-static/bin
+/install/android/x86-static/include
+/install/android/x86-static/lib
+/install/android/x86-static/bin
+/install/android/x86_64-static/lib
+/install/android/x86_64-static/bin
+/install/android/x86_64-static/include
